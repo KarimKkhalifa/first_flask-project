@@ -1,0 +1,25 @@
+{% extends 'home_page.html' %}
+
+{% block title %}
+{% endblock %}
+
+{% block body %}
+<div class="container mt-5">
+    <h1>{{data.title}}</h1>
+    <div class="alert alert-info">
+        {%if data.user_id==user_id%}
+        <p><b>{{data.text}}</b></p>
+        <a href="/posts_page/{{data.id}}/delete " class="bnt bnt-danger">delete</a>
+        <a href="/posts_page/{{data.id}}/update " class="bnt bnt-success">update</a>
+
+        {%else%}
+        <div class="alert alert-info">
+            <p><b>{{data.text}}</b></p>
+        </div>
+        {%endif%}
+
+        <p><b>{{data.date|date('%b %d, %Y')}}</b></p>
+    </div>
+
+</div>
+{% endblock %}

@@ -1,0 +1,3 @@
+[console_scripts]
+cascade = cmd.app:app
+

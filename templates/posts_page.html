@@ -1,0 +1,21 @@
+{% extends 'home_page.html' %}
+
+{% block title %}
+{% endblock %}
+
+{% block body %}
+<div class="container mt-5">
+    <h1>All posts on the site</h1>
+    <form method="post">
+
+        <td><input type="submit" value="oldest" name="oldest"></td>
+        <td><input type="submit" value="newest" name="newest"></td>
+    </form>
+    {% for el in data%}
+    <div class="alert alert-info">
+        <h2>{{el.title}}</h2>
+        <a href="/posts_page/{{el.id}} " class="bnt bnt-warning"> read more</a>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

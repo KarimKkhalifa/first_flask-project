@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: cascade
+Version: 0.1
+Summary: Cascade copies e-mails between IMAP servers
+Home-page: https://github.com/humankeyboard/cascade
+Author: Oz Akan
+Author-email: code@akan.me
+License: Apache Version 2.o
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
